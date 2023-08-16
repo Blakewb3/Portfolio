@@ -90,7 +90,7 @@ h2 {
 
 }
 
-.projects {
+.projects, .contacts {
     display: flex;
     border-radius: 10px;
     padding: 15px;
@@ -132,18 +132,47 @@ h2 {
     margin-bottom: 10px;
 }
 
+.card:hover {
+    /* background: rgb(78, 56, 78); */
+    box-shadow:  20px 20px 60px #403d3d,
+    -20px -20px 60px #565353;
+}
+
+
+
 a:link {
     text-decoration: none;
 
 }
 
-.prewsd, .pswordss {
+.prewsd, .pswordss, .qtmapp, .placeholderimg {
     border-radius: 19px;
     filter: blur(1.6px);
+
 }
 
+.card2{
+    width: 375px;
+    height: 45px;
+    color: black;
+    border-radius: 10px;
+    background: var(--main-bg-color);
+    font-size: larger;
+    font-family: var(--font-fam);
+    margin-bottom: 10px;
+    text-align: center;
+}
 
-
+.card3{
+    width: 450px;
+    height: 475px;
+    color: black;
+    border-radius: 10px;
+    background: var(--main-bg-color);
+    font-size: larger;
+    font-family: var(--font-fam);
+    margin-bottom: 10px;
+}
 
 
 
