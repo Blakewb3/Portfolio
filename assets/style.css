@@ -1,8 +1,16 @@
+:root {
+    --main-bg-color: #929094;
+    --text-color: black;
+    --font-fam: Arial, Helvetica, sans-serif;
+}
+
+
 * {
 
     padding: 10px;
     margin: 0;
     box-sizing: border-box;
+    font-family: var(--font-fam);
 }
 
 
@@ -23,12 +31,11 @@ header {
 
 }
 
-.header h1
- {
+.header h1 {
     display: flex;
     border-radius: 10px;
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-fam);
     background-color: rgb(146, 144, 148);
     color: rgb(0, 0, 0);
 
@@ -38,7 +45,7 @@ header {
     display: flex;
     flex-direction: row;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-fam);
     border-radius: 10px;
     margin-left: 200px;
     padding: .003px;
@@ -56,6 +63,7 @@ nav a {
     color: black;
     font-weight: bold;
     text-decoration: none;
+
 }
 
 
@@ -63,27 +71,76 @@ nav a:hover {
     color: rgb(113, 45, 155);
 }
 
+/* .header-img {} */
 h2 {
     text-align: left;
     font-size: 200%;
 }
 
+
 .about {
     display: flex;
-    
+    font-size: medium;
     border-radius: 10px;
     padding: 15px;
-     font-family:Arial, Helvetica, sans-serif;
+    font-family: var(--font-fam);
     background-color: rgb(146, 144, 148);
     color: black;
-    
+    margin-bottom: 30px;
+
 }
- 
+
+.projects {
+    display: flex;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: var(--font-fam);
+    border-color: black;
+    background-color: rgb(146, 144, 148);
+    color: black;
+    margin-bottom: 20px;
+
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
 
 
+.card {
+    width: 375px;
+    height: 400px;
+    color: black;
+    border-radius: 10px;
+    background: var(--main-bg-color);
+    font-size: larger;
+    font-family: var(--font-fam);
+    margin-bottom: 10px;
+}
 
+a:link {
+    text-decoration: none;
 
+}
 
+.prewsd, .pswordss {
+    border-radius: 19px;
+    filter: blur(1.6px);
+}
 
 
 
